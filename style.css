@@ -1,0 +1,61 @@
+svg {
+    font: 10px sans-serif;
+    shape-rendering: crispEdges;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.center-iframe {
+    display: block;
+    margin: auto;
+  }
+/* Add this to your style.css file */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+iframe {
+    width: 100vw;   /* 100% of the viewport width */
+    height: 100vh;  /* 100% of the viewport height */
+    border: none;   /* Remove border */
+}
+
+/* If there's any additional styling for the svg, ensure it does not conflict with iframe sizing */
+svg {
+    display: block; /* Add display block to ensure it doesn't affect the iframe */
+    max-width: 100%; /* Example to make svg responsive and not overflow */
+    height: auto; /* Adjust height automatically */
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+}
+
+.dot {
+    fill: red;
+    stroke: #000;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    height: 28px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
