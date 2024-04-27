@@ -22,6 +22,44 @@ iframe {
     height: 100vh;  /* 100% of the viewport height */
     border: none;   /* Remove border */
 }
+/* General body styling */
+body {
+    font-family: Arial, sans-serif; /* Sets the font across the page */
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4; /* Light grey background for the page */
+}
+
+/* Styling for main headings */
+h1 {
+    font-size: 24px; /* Larger font size for main headings */
+    color: #333; /* Dark grey color for text */
+    text-align: center; /* Centers the heading */
+    padding: 20px 0; /* Adds space above and below the heading */
+    background-color: #ffffff; /* White background for contrast */
+    margin-bottom: 10px; /* Adds space below the heading */
+    border-bottom: 2px solid #e1e1e1; /* Adds a light grey border under the heading */
+}
+
+/* Styling for sub-headings */
+h2 {
+    font-size: 20px;
+    color: #444;
+    padding: 15px 0;
+    background-color: #fff;
+    margin: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Styling for paragraphs */
+p {
+    font-size: 16px; /* Comfortable reading size for text */
+    color: #666; /* Medium grey for paragraph text */
+    line-height: 1.5; /* Adds space between lines for readability */
+    margin: 0 15px 10px; /* Margins for spacing around the text */
+    padding-bottom: 10px; /* Padding at the bottom */
+}
+
 
 /* If there's any additional styling for the svg, ensure it does not conflict with iframe sizing */
 svg {

@@ -1,6 +1,6 @@
 import pandas as pd
 import plotly.express as px
-import plotly.offline as pyo
+
 # Load your dataset
 data = pd.read_csv('data/covid_data.csv')
 
@@ -28,6 +28,5 @@ fig.update_layout(barmode='stack',
 # Updating the tooltips to show only the count for each part of the stacked bar
 fig.update_traces(hovertemplate='%{y}')
 
-# Showing the figure
-# pyo.plot(fig, filename='plot.html')
-fig.write_html('./plot1.html', full_html=False, include_plotlyjs='cdn')
+# Save the figure as an HTML file
+fig.write_html('path/to/your/project/folder/plot.html', full_html=False, include_plotlyjs='cdn')
